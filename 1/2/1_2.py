@@ -51,7 +51,6 @@ for line in lines:
             last = int(line[i])
             break
         elif line[i] in ["e", "o", "r", "x", "n", "t"]:
-            print("there")
             match line[i]:
                 case "o":
                     if line[i-2:i+1] == "two":
@@ -87,7 +86,6 @@ for line in lines:
                         last = 7
                         break
         i -= 1
-    print((first, last))
     sum += first * 10 + last
 
 print(sum)
