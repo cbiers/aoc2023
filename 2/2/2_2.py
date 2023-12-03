@@ -5,7 +5,6 @@ sum = 0
 
 for line in lines:
     parts = line.split(":")
-    num = int(parts[0].split()[1])
     games = parts[1].split(";")
     curr = {"red": 0, "green": 0, "blue": 0}
     for game in games:
