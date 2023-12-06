@@ -14,7 +14,6 @@ def revert(num, mapping):
         res = num
     return res
 
-
 seedNums = [int(x) for x in lines[0].split()[1:]]
 i = 0
 seeds = []
