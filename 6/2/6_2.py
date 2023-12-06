@@ -15,6 +15,4 @@ for i in range(len(times)):
             beat += 1
     res *= beat
 
-print(times)
-print(dists)
 print(res)
