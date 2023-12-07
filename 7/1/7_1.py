@@ -58,7 +58,6 @@ for line in lines:
 sum = 0
 
 hands = sortHands(hands)
-print(hands)
 
 for i in range(len(hands)):
     sum += hands[i]["bid"] * (i + 1)
