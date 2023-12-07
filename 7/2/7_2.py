@@ -29,6 +29,8 @@ def searchMax(hand):
         for rep in replacements:
             new = hand[:i] + rep + hand[i + 1:]
             best = max(best, searchMax(new))
+            if best == 7:
+                break
         return best
     else:
         return evaluate(hand)
@@ -66,7 +68,7 @@ def sortHands(hands):
                 hands[i], hands[j] = hands[j], hands[i]
     return hands
     
-f = open("ex.txt", "r")
+f = open("in.txt", "r")
 lines = f.readlines()
 
 hands = []
