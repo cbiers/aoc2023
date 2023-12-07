@@ -32,20 +32,18 @@ def searchMax(hand):
             if best == 7:
                 break
         return best
-    else:
-        return evaluate(hand)
+    return evaluate(hand)
 
 def getValue(hand):
     if "J" not in hand:
         return evaluate(hand)
-    else:   
-        return searchMax(hand)
+    return searchMax(hand)
 
 
 def compareCards(card1, card2):
     if cardValues[card1] > cardValues[card2]:
         return 1
-    elif cardValues[card1] < cardValues[card2]:
+    if cardValues[card1] < cardValues[card2]:
         return -1
     return 0
 
