@@ -43,9 +43,9 @@ def getValue(hand):
 
 
 def compareCards(card1, card2):
-    if cardValues[card1[0]] > cardValues[card2[0]]:
+    if cardValues[card1] > cardValues[card2]:
         return 1
-    elif cardValues[card1[0]] < cardValues[card2[0]]:
+    elif cardValues[card1] < cardValues[card2]:
         return -1
     return 0
 
